@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/contentAreaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp">
+
+                    <com.view.MTextView
+                        android:id="@+id/headerTitleTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="Contact"
+                        android:textAlignment="viewStart"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_18"
+                        app:customTypeFace="@string/robotomediumFont" />
+
+                    <com.view.MTextView
+                        android:id="@+id/descriptionTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="start"
+                        android:text="Hello Dummy Text"
+                        android:textAlignment="viewStart"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_14" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#AAAAAA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/helpContactslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp">
+
+                    <com.view.MTextView
+                        android:id="@+id/contactTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="Please"
+                        android:textAlignment="viewStart"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_18" />
+
+                    <com.view.MTextView
+                        android:id="@+id/reasonContactTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Reason To Contact "
+                        android:textAlignment="viewStart"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="@string/robotomediumFont" />
+
+                    <LinearLayout
+                        android:id="@+id/categoryarea"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <com.view.MTextView
+                            android:id="@+id/categoryText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:gravity="start|center_vertical"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="10dp"
+                            android:singleLine="true"
+                            android:text="Category Name"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="10dp"
+                            android:clickable="false"
+                            android:src="@mipmap/ic_down_arrow"
+                            android:tint="#272727" />
+                    </LinearLayout>
+
+
+                    <com.view.MTextView
+                        android:id="@+id/additionalCommentTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="Additional Comments"
+                        android:textAlignment="viewStart"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="@string/robotomediumFont" />
+
+                    <include
+                        android:id="@+id/contentBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+
+                    <include
+                        android:id="@+id/btn_type2"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_marginTop="15dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/loadingBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

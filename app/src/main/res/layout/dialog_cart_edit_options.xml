@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomArea"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#eae9e9"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/vItemNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_14"
+
+                    app:customTypeFace="@string/robotobold" />
+
+                <com.view.MTextView
+                    android:id="@+id/vCancelTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="@string/robotobold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.view.MTextView
+                            android:id="@+id/baseFareHTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+
+                            android:textAlignment="viewStart"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/txt_size_14"
+                            app:customTypeFace="@string/robotomediumFont" />
+
+                        <com.view.MTextView
+                            android:id="@+id/baseFareVTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+
+                            android:textAlignment="viewEnd"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/txt_size_14"
+                            app:customTypeFace="@string/robotomediumFont" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/optionArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <com.view.MTextView
+                            android:id="@+id/optionTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textAlignment="viewStart"
+
+                            android:textColor="@color/appThemeColor_1"
+                            android:textSize="@dimen/txt_size_14"
+                            app:customTypeFace="@string/robotobold" />
+
+                        <LinearLayout
+                            android:id="@+id/optionContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"></LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/topingArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.view.MTextView
+                            android:id="@+id/topingTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/appThemeColor_1"
+                            android:textSize="@dimen/txt_size_14"
+                            app:customTypeFace="@string/robotobold" />
+
+                        <LinearLayout
+                            android:id="@+id/topingContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"></LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/btn_type2"
+            layout="@layout/btn_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_btn_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

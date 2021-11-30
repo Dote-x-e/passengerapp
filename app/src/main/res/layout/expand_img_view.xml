@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/mProgressBar"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:indeterminateTint="@color/appThemeColor_1"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/mImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="14dp"
+            android:layout_gravity="end|top"
+            android:layout_width="@dimen/_22sdp"
+            app:cardBackgroundColor="@color/appThemeColor_1"
+            android:layout_height="@dimen/_22sdp">
+
+            <ImageView
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:id="@+id/closeImg"
+                app:srcCompat="@drawable/tw__composer_close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

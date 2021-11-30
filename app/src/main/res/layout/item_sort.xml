@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.view.MTextView
+        android:id="@+id/rowTitleTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/serviceNameTxtView"
+        android:gravity="center_vertical|start"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_14" />
+</LinearLayout>

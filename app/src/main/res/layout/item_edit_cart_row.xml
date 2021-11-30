@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <View
+        android:id="@+id/seperatorView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="#e8e8e8"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mImageView"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/itemTypeImgView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0"
+            android:clickable="false"
+            android:src="@drawable/veg"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.view.MTextView
+                android:id="@+id/itemNameTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center_vertical"
+                android:text="Item Name"
+                android:textColor="#333333"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="@string/robotoRegular" />
+
+            <com.view.MTextView
+                android:id="@+id/itemsubNameTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/txt_size_12"
+                app:customTypeFace="@string/robotoRegular" />
+
+            <LinearLayout
+                android:id="@+id/editOptionsArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/customizeTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center|end"
+                    android:text="CUSTOMIZE"
+                    android:textAllCaps="true"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/txt_size_12"
+                    app:customTypeFace="@string/robotoRegular" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_arrow_down"
+                    android:tint="@color/appThemeColor_1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/minusImgView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/appThemeColor_1"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/appThemeColor_TXT_1"
+                android:textSize="22sp"
+                app:customTypeFace="@string/robotomediumFont" />
+
+            <com.view.MTextView
+                android:id="@+id/QTYNumberTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="40dp"
+                android:minWidth="30dp"
+                android:padding="5dp"
+                android:text="1"
+                android:textColor="#333333"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="@string/robotobold" />
+
+            <com.view.MTextView
+                android:id="@+id/addImgView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/appThemeColor_1"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/appThemeColor_TXT_1"
+                android:textSize="22sp"
+                app:customTypeFace="@string/robotobold" />
+        </LinearLayout>
+
+        <com.view.MTextView
+            android:id="@+id/itemPriceTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="end|center_vertical"
+            android:padding="5dp"
+            android:text="$500"
+            android:minWidth="75dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#333333"
+            android:textSize="@dimen/txt_size_14"
+            app:customTypeFace="@string/robotoRegular" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

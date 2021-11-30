@@ -1,0 +1,147 @@
+{
+  "project_info": {
+    "project_number": "533129907760",
+    "firebase_url": "https://levaeu-android-ios.firebaseio.com",
+    "project_id": "levaeu-android-ios",
+    "storage_bucket": "levaeu-android-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533129907760:android:60dcef758d2a0d9ce667f5",
+        "android_client_info": {
+          "package_name": "com.levaeu.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533129907760-8gqftnj8oqtttk8chso195hpr0ot3stj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.driver",
+            "certificate_hash": "5e6d5836cc97502e142640132bce8b0b161c3ec2"
+          }
+        },
+        {
+          "client_id": "533129907760-8vqp44bgtnan7cik19purec2hdoh8ci3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.driver",
+            "certificate_hash": "26677a9d3909ce8c1763d685441facf5d584b6fe"
+          }
+        },
+        {
+          "client_id": "533129907760-olqhi4kik9otb1saj986qmtofm16lu0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.driver",
+            "certificate_hash": "09162e62458fd9d838ce4c3ff3708e5f47d7597a"
+          }
+        },
+        {
+          "client_id": "533129907760-5ih8i03vig1ega0k0llj1dligp56km9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.driver",
+            "certificate_hash": "e12fd70463e4c891c64ad8786fa766ade065c453"
+          }
+        },
+        {
+          "client_id": "533129907760-2o3g1ou9aj4sl93l53qou9gn5clehokm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWfdW07pWeUsGojdFN1yiRkrzknOsZL6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533129907760-2o3g1ou9aj4sl93l53qou9gn5clehokm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "533129907760-is0qg14fm6qb2raftqh9i5pjbqasgo65.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.levaeu.passenger"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533129907760:android:1cde9c52ab7e8ecde667f5",
+        "android_client_info": {
+          "package_name": "com.levaeu.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533129907760-c9o6fka9q4ek2p7h11neqo05diff8aku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.passenger",
+            "certificate_hash": "26677a9d3909ce8c1763d685441facf5d584b6fe"
+          }
+        },
+        {
+          "client_id": "533129907760-ldark8nolvcbu9o8u4o2hll2qu0ndjj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.passenger",
+            "certificate_hash": "09162e62458fd9d838ce4c3ff3708e5f47d7597a"
+          }
+        },
+        {
+          "client_id": "533129907760-8g2c8eufrfl2osjbhtain4ejhtqqa2mp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.passenger",
+            "certificate_hash": "5e6d5836cc97502e142640132bce8b0b161c3ec2"
+          }
+        },
+        {
+          "client_id": "533129907760-3ccl1t6ut6b9j0gthq68tsfleeg5b94d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.levaeu.passenger",
+            "certificate_hash": "e12fd70463e4c891c64ad8786fa766ade065c453"
+          }
+        },
+        {
+          "client_id": "533129907760-2o3g1ou9aj4sl93l53qou9gn5clehokm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWfdW07pWeUsGojdFN1yiRkrzknOsZL6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533129907760-2o3g1ou9aj4sl93l53qou9gn5clehokm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "533129907760-is0qg14fm6qb2raftqh9i5pjbqasgo65.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.levaeu.passenger"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

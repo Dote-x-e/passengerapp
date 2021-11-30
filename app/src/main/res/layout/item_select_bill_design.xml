@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/totalarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageFoodType"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_from_point"
+                    android:visibility="gone" />
+
+                <com.view.MTextView
+                    android:id="@+id/billItems"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical|start"
+                    android:padding="7dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="#272727"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="@string/robotobold" />
+
+                <com.view.MTextView
+
+                    android:id="@+id/billItemsQty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical|start"
+                    android:padding="7dp"
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#272727"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="@string/robotobold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/strikeoutbillAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:gravity="end"
+                        android:paddingEnd="7dp"
+                        android:paddingStart="7dp"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:customTypeFace="@string/robotobold" />
+
+                    <com.view.MTextView
+                        android:id="@+id/billAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:gravity="end"
+
+                        android:padding="7dp"
+
+                        android:textAlignment="viewEnd"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="bold"
+                        app:customTypeFace="@string/robotobold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/serviceTypeNameTxtView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-5dp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#838383"
+                android:textSize="@dimen/txt_size_12"
+                app:customTypeFace="@string/robotolightFont" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

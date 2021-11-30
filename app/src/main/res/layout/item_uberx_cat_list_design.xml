@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp">
+
+        <ImageView
+            android:id="@+id/catImgView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:src="@mipmap/ic_no_icon" />
+
+        <com.view.MTextView
+            android:id="@+id/uberXCatNameTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:hint="content"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textColor="#030303"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+
+            android:tint="@color/black"
+            android:src="@mipmap/ic_arrow_right" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/serviceCheckbox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="12dp"
+            android:theme="@style/MyCheckBox" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/leftSeperation"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1C1C1C"
+        android:visibility="gone" />
+</LinearLayout>
